@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+body {
+  background: url(../images.jpg);
+  transition: 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cointainer {
+  width: 1120px;
+  max-width: 100%;
+  margin: auto;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  padding: 20px;
+  max-width: 100%;
+}
+.claculator {
+  background: rgba(255, 255, 255, 0.342);
+  backdrop-filter: blur(5px);
+  padding: 10px 20px;
+  border-radius: 20px;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 0 0px 10px black, inset 0px -5px 15px black;
+}
+table {
+  width: 410px;
+  display: table;
+
+  border-spacing: 10px 10px;
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+th {
+  text-align: right;
+  padding: 0px;
+}
+.result {
+  border-radius: 10px;
+  width: 100%;
+  height: 80px;
+  padding: 0px 10px;
+  border: none;
+  background: none;
+  text-align: right;
+  font-size: 30px;
+}
+td {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  transition: 0.1s ease-in-out;
+  border-radius: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.911);
+}
+
+@media only screen and (max-width: 480px) {
+  table {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .result {
+    padding: 20px;
+  }
+  td {
+    text-align: center;
+    padding: 10px;
+  }
+}
+td:nth-child(odd) {
+  background: #0fbaf994;
+}
+td:nth-child(even) {
+  background: #c7ecee88;
+}
+
+td:hover {
+  background: rgba(0, 81, 255, 0.918);
+  color: white;
+}
+td:active {
+  background: rgba(0, 255, 85, 0.966);
+  color: white;
+}
